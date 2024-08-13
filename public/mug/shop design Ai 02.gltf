@@ -1,0 +1,228 @@
+{
+    "asset": {
+        "copyright": "(C)2024 MZ",
+        "generator": "maya2glTF main fbbc95e5dc4d",
+        "version": "2.0"
+    },
+    "scenes": [
+        {
+            "nodes": [
+                0
+            ]
+        }
+    ],
+    "scene": 0,
+    "nodes": [
+        {
+            "name": "Model",
+            "children": [
+                1
+            ],
+            "translation": [
+                -165.306884765625,
+                131.71099853515626,
+                0.0
+            ]
+        },
+        {
+            "name": "Model:PIV",
+            "children": [
+                2
+            ],
+            "translation": [
+                165.306884765625,
+                -131.71099853515626,
+                0.0
+            ]
+        },
+        {
+            "name": "Obj41",
+            "children": [
+                3
+            ],
+            "translation": [
+                593.6647338867188,
+                235.23846435546876,
+                -167.7566680908203
+            ]
+        },
+        {
+            "name": "Obj41:PIV",
+            "mesh": 0,
+            "translation": [
+                -19.42127227783203,
+                -235.23846435546876,
+                92.599853515625
+            ]
+        }
+    ],
+    "meshes": [
+        {
+            "name": "Obj41Shape",
+            "extras": {
+                "targetNames": []
+            },
+            "primitives": [
+                {
+                    "attributes": {
+                        "NORMAL": 1,
+                        "POSITION": 2,
+                        "TANGENT": 3,
+                        "TEXCOORD_0": 4
+                    },
+                    "indices": 0,
+                    "mode": 4,
+                    "material": 0
+                }
+            ]
+        }
+    ],
+    "materials": [
+        {
+            "name": "GLSLShader78",
+            "pbrMetallicRoughness": {
+                "baseColorFactor": [
+                    1.0,
+                    1.0,
+                    1.0,
+                    1.0
+                ],
+                "metallicFactor": 0.5,
+                "roughnessFactor": 0.5
+            },
+            "emissiveFactor": [
+                0.0,
+                0.0,
+                0.0
+            ]
+        }
+    ],
+    "accessors": [
+        {
+            "name": "Obj41Shape#0/indices",
+            "bufferView": 0,
+            "byteOffset": 0,
+            "componentType": 5123,
+            "count": 9642,
+            "max": [
+                2022
+            ],
+            "min": [
+                0
+            ],
+            "type": "SCALAR"
+        },
+        {
+            "name": "Obj41Shape#0/vertices/NORMAL",
+            "bufferView": 1,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 2023,
+            "max": [
+                0.9994707107543944,
+                0.999996781349182,
+                0.9993842840194702
+            ],
+            "min": [
+                -0.9993446469306946,
+                -0.9999495148658752,
+                -0.999467670917511
+            ],
+            "type": "VEC3"
+        },
+        {
+            "name": "Obj41Shape#0/vertices/POSITION",
+            "bufferView": 1,
+            "byteOffset": 24276,
+            "componentType": 5126,
+            "count": 2023,
+            "max": [
+                51.64813995361328,
+                256.5831298828125,
+                -53.32245635986328
+            ],
+            "min": [
+                -12.80559539794922,
+                213.893798828125,
+                -131.8772430419922
+            ],
+            "type": "VEC3"
+        },
+        {
+            "name": "Obj41Shape#0/vertices/TANGENT",
+            "bufferView": 2,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 2023,
+            "max": [
+                0.999070942401886,
+                0.9999887347221376,
+                0.7256881594657898,
+                1.0
+            ],
+            "min": [
+                -0.9576536417007446,
+                -0.9999547004699708,
+                -0.9999593496322632,
+                1.0
+            ],
+            "type": "VEC4"
+        },
+        {
+            "name": "Obj41Shape#0/vertices/TEXCOORD_0",
+            "bufferView": 3,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 2023,
+            "max": [
+                0.9775286912918092,
+                0.9980079531669616
+            ],
+            "min": [
+                0.0019511550199240449,
+                0.0019919280894100668
+            ],
+            "type": "VEC2"
+        }
+    ],
+    "bufferViews": [
+        {
+            "name": "shop design Ai 02/data/indices-2",
+            "buffer": 0,
+            "byteOffset": 97104,
+            "byteLength": 19284,
+            "target": 34963
+        },
+        {
+            "name": "shop design Ai 02/data/vertices-12",
+            "buffer": 0,
+            "byteOffset": 32368,
+            "byteLength": 48552,
+            "byteStride": 12,
+            "target": 34962
+        },
+        {
+            "name": "shop design Ai 02/data/vertices-16",
+            "buffer": 0,
+            "byteOffset": 0,
+            "byteLength": 32368,
+            "byteStride": 16,
+            "target": 34962
+        },
+        {
+            "name": "shop design Ai 02/data/vertices-8",
+            "buffer": 0,
+            "byteOffset": 80920,
+            "byteLength": 16184,
+            "byteStride": 8,
+            "target": 34962
+        }
+    ],
+    "buffers": [
+        {
+            "name": "shop design Ai 02/data",
+            "byteLength": 116388,
+            "uri": "shop design Ai 020.bin"
+        }
+    ]
+}

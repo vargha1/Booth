@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <style>
+    @tailwind base;
+    @tailwind components;
+    @tailwind utilities;
+  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vite App</title>
+  <script type="vertex" id="vertexshader">
+      varying vec2 vUv;
+      void main() {
+        vUv = uv;
+        gl_Position = projectionMatrix * modelViewMatrix * vec4( position, 1.0 );
+      }
+    </script>
+  <script type="fragment" id="fragmentshader">
+      uniform sampler2D baseTexture;
+      uniform sampler2D bloomTexture;
+      varying vec2 vUv;
+      void main() {
+        gl_FragColor = (texture2D(baseTexture, vUv) + vec4(1.0) * texture2D(bloomTexture, vUv));
+      }
+    </script>
+</head>
+
+<body>
+  <main>
+    <div id="canvasHolder">
+
+    </div>
+  </main>
+  <div class="flex absolute inset-0 bg-[#1d1f39] justify-center items-center" id="loadingScreen"></div>
+  <div class="flex relative h-[100dvh] bg-[#1d1f39] z-[8]" id="startSection">
+
+  </div>
+  <iframe src="https://pixelypanel.hodev.ir/chat?token=008c56d8-17f2-4651-9aba-4e22ac4e8c21" id="chat"></iframe>
+  <script type="module" src="/main.js"></script>
+</body>
+
+</html>

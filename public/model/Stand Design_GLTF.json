@@ -1,0 +1,11 @@
+{
+	"Stand Design_GLTF": {
+		"version": 1,
+		"id": "Stand Design_GLTF",
+		"name": "0",
+		"kind": "Puppeteer",
+		"mood": null,
+		"postPlaybackMood": null,
+		"duration": 10
+	}
+}
