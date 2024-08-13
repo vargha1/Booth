@@ -356,6 +356,7 @@ function onMouseDown(event) {
       document.getElementById("chat").classList.toggle("top-[50%]")
       document.getElementById("chat").classList.toggle("h-[45%]")
       document.getElementById("chat").classList.toggle("right-5")
+      document.getElementById("chat").classList.toggle("hidden")
       intersections[0].object.layers.toggle(BLOOM_SCENE)
     }
     if (intersections[0].object.name == "next") {
