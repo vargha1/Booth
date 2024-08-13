@@ -93,9 +93,9 @@ document.addEventListener("DOMContentLoaded", () => {
     // scene.add(textMesh3)
     document.querySelector("#startSection").classList.add("hidden")
     gsap.to(camera.position, {
-      x: 80,
-      y: 21,
-      z: 95,
+      x: 0,
+      y: 120,
+      z: 240,
       duration: 6,
       ease: "expo.inOut",
       onStart: () => controls.enabled = false,
@@ -227,7 +227,7 @@ controls.enablePan = true;
 controls.minPolarAngle = 0.5;
 controls.maxPolarAngle = 1.35;
 controls.minDistance = 0;
-controls.maxDistance = 220;
+controls.maxDistance = 280;
 controls.rotateSpeed = 0.5;
 controls.update()
 // const spl = new T.SpotLight(0xe1ceb2, 8000000, 530, Math.PI / 2 + 1.2, 0.4)
@@ -259,10 +259,12 @@ function onMouseDown(event) {
     // intersections[0].object.layers.toggle(BLOOM_SCENE)
     console.log(intersections[0].object);
     if (intersections[0].object.name == "polySurface166PIV") {
+      click.play()
+      window.setTimeout(() => whoosh.play(), 2000)
       gsap.to(camera.position, {
-        x: 67,
+        x: 100,
         y: 22,
-        z: -20,
+        z: -33,
         duration: 6,
         ease: "expo.inOut",
         onStart: () => controls.enabled = false,
@@ -282,10 +284,12 @@ function onMouseDown(event) {
       })
     }
     if (intersections[0].object.name == "polySurface161PIV") {
+      click.play()
+      window.setTimeout(() => whoosh.play(), 2000)
       gsap.to(camera.position, {
         x: 0,
         y: 22,
-        z: 150,
+        z: 240,
         duration: 6,
         ease: "expo.inOut",
         onStart: () => controls.enabled = false,
@@ -305,6 +309,8 @@ function onMouseDown(event) {
       })
     }
     if (intersections[0].object.name == "polySurface172PIV") {
+      click.play()
+      window.setTimeout(() => whoosh.play(), 2000)
       gsap.to(camera.position, {
         x: -1,
         y: 19,
@@ -328,6 +334,8 @@ function onMouseDown(event) {
       })
     }
     if (intersections[0].object.name == "polySurface179PIV") {
+      click.play()
+      window.setTimeout(() => whoosh.play(), 2000)
       gsap.to(camera.position, {
         x: 15,
         y: 22.33,
@@ -353,10 +361,11 @@ function onMouseDown(event) {
     if (intersections[0].object.name == "polySurface7PIV") {
       document.getElementById("chat").classList.toggle("z-[45]")
       document.getElementById("chat").classList.toggle("absolute")
-      document.getElementById("chat").classList.toggle("top-[50%]")
-      document.getElementById("chat").classList.toggle("h-[45%]")
-      document.getElementById("chat").classList.toggle("right-5")
+      document.getElementById("chat").classList.toggle("w-full")
+      document.getElementById("chat").classList.toggle("h-full")
+      document.getElementById("chat").classList.toggle("p-3")
       document.getElementById("chat").classList.toggle("hidden")
+      document.getElementById("btn-close").classList.toggle("hidden")
       intersections[0].object.layers.toggle(BLOOM_SCENE)
     }
     if (intersections[0].object.name == "next") {
@@ -386,6 +395,16 @@ function onMouseDown(event) {
       })
     }
   }
+}
+
+window.closeChat = () => {
+  document.getElementById("chat").classList.toggle("z-[45]")
+  document.getElementById("chat").classList.toggle("absolute")
+  document.getElementById("chat").classList.toggle("w-full")
+  document.getElementById("chat").classList.toggle("h-full")
+  document.getElementById("chat").classList.toggle("p-3")
+  document.getElementById("chat").classList.toggle("hidden")
+  document.getElementById("btn-close").classList.toggle("hidden")
 }
 
 function darkenNonBloomed(obj) {
